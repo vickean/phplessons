@@ -1,0 +1,71 @@
+@import 'presets';
+
+html {
+  background-color: $d2-color;
+  font-family: $open-sans;
+}
+
+#topnav {
+  a {
+    padding: 0.5rem;
+    background-color: $nav-color;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+  }
+}
+
+#main-container {
+  background-color: $bg-color;
+  padding: 2rem;
+  margin: 2rem;
+  box-shadow: $resting-box-shadow;
+
+  h1 {
+    font-family: $roboto-slab;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-family: $roboto-slab;
+  }
+}
+
+#d-container {
+  display: flex;
+
+  #d1 {
+    @extend %d-contianter-child-divs;
+  }
+  #d2 {
+    @extend %d-contianter-child-divs;
+  }
+  #d3 {
+    @extend %d-contianter-child-divs;
+  }
+  #d4 {
+    @extend %d-contianter-child-divs;
+  }
+
+  h4 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+footer {
+  background-color: $nav-color;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+
+  p {
+    margin: 0 0 1rem 0;
+  }
+
+  a {
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    text-decoration: none;
+  }
+}

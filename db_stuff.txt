@@ -1,0 +1,8 @@
+create table posts (
+ id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+ subject varchar(128) not null,
+ content varchar(1000) not null,
+ date datetime not null
+);
+
+insert into posts (subject, content, date) VALUES ('Hello World!', 'Ut maximus in est in volutpat. Phasellus metus ipsum, gravida in arcu eu, consequat tempus elit. Ut at quam eu metus maximus gravida et nec nisi. Quisque iaculis nulla ut libero vehicula semper. Sed hendrerit feugiat accumsan. Ut eros lacus, suscipit in sapien quis, volutpat ullamcorper tortor. Nullam tristique est dui, id ultricies tellus scelerisque eget. Maecenas dictum sollicitudin gravida.', '2018-04-19 04:00:00');

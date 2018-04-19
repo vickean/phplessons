@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+$d1-color: rgba(123, 177, 51, 1);
+$d2-color: rgba(71, 128, 166, 1);
+$test-color: rgba(58, 241, 213, 1);
+$bg-color: rgba(204, 204, 204, 1);
+$resting-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+$hover-box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+$nav-color: rgba(83, 53, 162, 1);
+
+$roboto-slab: 'Roboto Slab', serif;
+$open-sans: 'Open Sans', sans-serif;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($attr, $time) {
+  -webkit-transition: $attr $time;
+  -moz-transition: $attr $time;
+  -o-transition: $attr $time;
+  transition: $attr $time;
+}
+
+%d-contianter-child-divs {
+  padding: 2rem;
+  background-color: $test-color;
+  box-shadow: $resting-box-shadow;
+  margin: 1rem;
+  cursor: pointer;
+  @include border-radius(4px);
+  @include transition(box-shadow, 0.5s);
+
+  &:hover {
+    box-shadow: $hover-box-shadow;
+  }
+}
