@@ -17,5 +17,6 @@
       <a href='page_three.php'>Pg3</a>
       <a href='page_four.php'>Pg4(DB)</a>
       <a href='sass_exercise.php'>Sass Exercises</a>
+      <a href='hash_function_experiment.php'>Hash Exp.</a>
       <a href='page_three.php'><?php echo isset($_SESSION['username'])?$_SESSION['username']:"Log In?";?></a>
     </nav>
